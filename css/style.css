@@ -1,0 +1,39 @@
+body { font-size: 14px;
+  line-height: 21px;
+  color: rgb(51, 51, 51);
+  font-weight: normal;
+  font-family: PT Sans;
+
+  }﻿
+
+h1 .advantage-intro { font-size: 21px;
+        line-height: 26px;
+        color: rgb(0, 0, 0);
+        font-weight: normal;
+        font-family: PT Sans;
+
+  }﻿
+
+h2 .advantage-title { font-size: 21px;
+      line-height: 21px;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      font-family: PT Sans;
+
+  }﻿
+
+h3 .hotel-search-title { font-size: 30px;
+      line-height: 24px;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      font-family: PT Sans;
+
+  }﻿
+
+h4 .sorting-title { font-size: 14px;
+        line-height: 21px;
+        color: rgb(51, 51, 51);
+        font-weight: normal;
+        font-family: PT Sans;
+
+  }

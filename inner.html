@@ -27,10 +27,10 @@
             </li>
           </ul>
         </nav>
-    </header>
+      </header>
       <section class="filters">
-        <div class="filter-block">
-          <form action="#" method="post">
+        <form action="#" method="post">
+          <div class="filter-block">
             <b class="filter-type">Инфраструктура:</b><br>
             <div>
               <input type="checkbox" name="pool" id="pool" checked>
@@ -57,19 +57,19 @@
               <input type="checkbox" name="apartment" id="apartment" checked>
               <label for="apartment">Апартаменты</label>
             </div>
+          </div>
             <b class="filter-type">Стоимость в сутки (Р):</b><br>
             <input type="text" name="from-price" value="от 0">
             <input type="text" name="to-price" value="до 3000"><br>
             <button type="submit" name="search">Показать</button>
-          </form>
-        </div>
+        </form>
       </section>
-      <section class="result-area">
+      <div class="result-area">
         <div class="result-sorting">
           <span>Найдено:</span>
           <span>3</span>
-          <h4 class="sorting-title">Сортировка:</h4>
           <ul>
+            <li class="sorting-title">Сортировка:</li>
             <li>
               <a class="active">По цене</a>
             </li>
@@ -85,7 +85,8 @@
             <a href="#"><img src="#" width="10" height="10" alt="По убыванию"></a>
           </div>
         </div>
-        <article class="result-item">
+      </div>
+        <section class="result-item">
           <div class="item-image">
             <img src="img/amara.jpg" width="135" height="90" alt="Результат-1">
           </div>
@@ -101,13 +102,14 @@
             <a href="#" class="btn btn-brown">Забронировать</a>
           </div>
           <div class="stars">
-            <span class="star"><img src="img/4stars.png" width="89" height="17" alt="Звездочки"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
           </div>
-          <div class="rating">
-            <p class="rate-level">Рейтинг: 8,5</p>
-          </div>
-        </article>
-        <article class="result-item">
+          <p class="rating">Рейтинг: 8,5</p>
+        </section>
+        <section class="result-item">
           <div class="item-image">
             <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Результат-2">
           </div>
@@ -116,42 +118,40 @@
             <div class="type-price">
               <span>Мотель</span>
               <span>от 3000 Р.</span>
-          </div>
+            </div>
           </div>
           <div class="info-and-booking">
             <a href="#" class="btn btn-blue">Подробнее</a>
             <a href="#" class="btn btn-brown">Забронировать</a>
           </div>
           <div class="stars">
-            <span class="star"><img src="img/3stars.png" width="65" height="17" alt="Звездочки"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
           </div>
-          <div class="rating">
-            <p class="rate-level">Рейтинг: 8,9</p>
-          </div>
-        </article>
-        <article class="result-item">
+          <p class="rating">Рейтинг: 8,9</p>
+        </section>
+        <section class="result-item">
           <div class="item-image">
-            <img src="poco-diabli.jpg" width="135" height="90" alt="Результат-2">
+            <img src="poco-diablo.jpg" width="135" height="90" alt="Результат-2">
           </div>
           <div class="result-description">
             <a href="#">Villas at Poco Diablo</a>
             <div class="type-price">
               <span>Апартаменты</span>
               <span>от 2000 Р.</span>
-          </div>
+            </div>
           </div>
           <div class="info-and-booking">
             <a href="#" class="btn btn-blue">Подробнее</a>
             <a href="#" class="btn btn-brown">Забронировать</a>
           </div>
           <div class="stars">
-            <span class="star"><img src="img/2stars.png" width="42" height="17" alt="Звездочки"></span>
+            <span class="star"></span>
+            <span class="star"></span>
           </div>
-          <div class="rating">
-            <p class="rate-level">Рейтинг: 9,2</p>
-          </div>
-        </article>
-      </section>
+          <p class="rating">Рейтинг: 9,2</p>
+        </section>
       <footer>
         <div class="hashtag">
           #visitsedona
@@ -166,6 +166,6 @@
           <a class="developer-link" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/footer-logo.png" width="113" height="39" alt="HTML Academy"></a>
         </div>
       </footer>
-      </div>
-    </body>
+    </div>
+  </body>
 </html>

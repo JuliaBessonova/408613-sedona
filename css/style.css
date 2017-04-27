@@ -1,39 +1,44 @@
-body { font-size: 14px;
+body {
+  font-size: 14px;
   line-height: 21px;
   color: rgb(51, 51, 51);
   font-weight: normal;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
 
   }﻿
 
-h1 .advantage-intro { font-size: 21px;
-        line-height: 26px;
-        color: rgb(0, 0, 0);
-        font-weight: normal;
-        font-family: PT Sans;
+.advantages-title {
+  font-size: 21px;
+  line-height: 26px;
+  color: rgb(0, 0, 0);
+  font-weight: normal;
+  font-family: "PT Sans", Arial, sans-serif;
 
   }﻿
 
-h2 .advantage-title { font-size: 21px;
-      line-height: 21px;
-      color: rgb(255, 255, 255);
-      font-weight: bold;
-      font-family: PT Sans;
+.advantage-title {
+  font-size: 21px;
+  line-height: 21px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-family: "PT Sans", Arial, sans-serif;
 
   }﻿
 
-h3 .hotel-search-title { font-size: 30px;
-      line-height: 24px;
-      color: rgb(0, 0, 0);
-      font-weight: bold;
-      font-family: PT Sans;
+.hotel-search-title {
+  font-size: 30px;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-family: "PT Sans", Arial, sans-serif;
 
   }﻿
 
-h4 .sorting-title { font-size: 14px;
-        line-height: 21px;
-        color: rgb(51, 51, 51);
-        font-weight: normal;
-        font-family: PT Sans;
+.sorting-title {
+  font-size: 14px;
+  line-height: 21px;
+  color: rgb(51, 51, 51);
+  font-weight: normal;
+  font-family: "PT Sans", Arial, sans-serif;
 
   }

@@ -33,3 +33,145 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
 
   }﻿
+.wrapper {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  width: 1054px;
+  padding-right: 73px;
+  padding-left: 73px;
+  margin-bottom: 59px;
+}
+
+.header-logo {
+  float: left;
+  width: 220px;
+}
+
+.main-navigation {
+  width: 834px;
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.intro {
+  width: 458px;
+  height: 352px;
+  margin-bottom: 141px;
+}
+
+.advantages {
+  width: 1200px;
+}
+
+.advantage-row {
+  width: 1200px;
+}
+
+.advantage {
+  float: left;
+}
+
+.advantage-item {
+  float: left;
+  width: 400px;
+}
+
+.hotel-search {
+  width: 1200px;
+}
+
+.hotel-search-form {
+  width: 576px;
+}
+
+.map {
+  width: 1200px;
+}
+
+.search-form {
+  width: 576px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-footer {
+  width: 1054px;
+  padding-right: 73px;
+  padding-left: 73px;
+}
+
+.hashtag {
+  width: 240px;
+  float: left;
+  padding-right: 163px;
+}
+
+.social-btns {
+  width: 256px;
+  float: left;
+}
+
+.developer {
+  width: 241px;
+  float: right;
+}
+
+.filters {
+  width: 1054px;
+  padding-right: 73px;
+  padding-left: 73px;
+}
+
+.filter-form {
+  width: 1054px;
+}
+
+.result-area {
+  width: 1054px;
+  padding-right: 73px;
+  padding-left: 73px;
+}
+
+.result-sorting {
+  width: 1054px;
+}
+
+.result-item {
+  width: 1054px;
+  padding-right: 73px;
+  padding-left: 73px;
+}
+
+.item-image {
+  width: 135px;
+  float: left;
+  padding-right: 28px;
+}
+
+.result-description {
+  width: 218px;
+  float: left;
+}
+
+.info-and-booking {
+  width: 264px;
+  float: left;
+}
+
+.stars {
+  float: right;
+}
+
+.rating {
+  width: 110px;
+  float: right;
+}

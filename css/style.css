@@ -31,29 +31,41 @@ body {
   color: rgb(0, 0, 0);
   font-weight: bold;
   font-family: "PT Sans", Arial, sans-serif;
-
   }﻿
+
 .wrapper {
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
-header {
-  width: 1054px;
+.header {
+  position: relative;
   padding-right: 73px;
   padding-left: 73px;
-  margin-bottom: 59px;
+  min-height: 57px;
 }
 
 .header-logo {
-  float: left;
+  position: absolute;
   width: 220px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.main-navigation {
-  width: 834px;
-  float: right;
+.main-navigation ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+li {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  text-align: right;
+  font-size: 14px;
 }
 
 .clearfix::after {
@@ -65,19 +77,22 @@ header {
 .intro {
   width: 458px;
   height: 352px;
-  margin-bottom: 141px;
+  padding-top: 59px;
+  padding-bottom: 141px;
+  margin: 0 auto;
+
 }
 
 .advantages {
-  width: 1200px;
+  text-align: center;
 }
 
 .advantage-row {
-  width: 1200px;
 }
 
 .advantage {
   float: left;
+  width: 33.333333%;
 }
 
 .advantage-item {
@@ -85,16 +100,20 @@ header {
   width: 400px;
 }
 
+.advantage-image {
+  width: 66.666666%;
+}
+
 .hotel-search {
-  width: 1200px;
+  text-align: center;
 }
 
 .hotel-search-form {
   width: 576px;
+  text-align: center;
 }
 
 .map {
-  width: 1200px;
 }
 
 .search-form {
@@ -126,52 +145,60 @@ header {
 }
 
 .filters {
-  width: 1054px;
   padding-right: 73px;
   padding-left: 73px;
 }
 
 .filter-form {
-  width: 1054px;
+}
+
+.filter-block {
+  float: left;
+  padding-right: 79px;
+}
+
+.price-per-day {
+  float: right;
 }
 
 .result-area {
-  width: 1054px;
+  padding-right: 73px;
+  padding-left: 73px;
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+
+.found {
+  float: left;
+}
+
+.sorting-list {
+  float: left;
+  font-size: 12px;
+  padding-right: 34px;
+}
+
+.sorting {
+  float: right;
+}
+
+.hotel {
   padding-right: 73px;
   padding-left: 73px;
 }
 
-.result-sorting {
-  width: 1054px;
-}
-
-.result-item {
-  width: 1054px;
-  padding-right: 73px;
-  padding-left: 73px;
-}
-
-.item-image {
+.hotel-image {
   width: 135px;
   float: left;
   padding-right: 28px;
 }
 
-.result-description {
-  width: 218px;
-  float: left;
-}
-
-.info-and-booking {
+.hotel-description {
   width: 264px;
   float: left;
 }
 
-.stars {
-  float: right;
-}
-
-.rating {
+.hotel-rating {
   width: 110px;
   float: right;
 }

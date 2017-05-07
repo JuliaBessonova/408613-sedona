@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="clearfix">
+      <header class="header">
         <div class="header-logo">
           <a href="#"><img src="img/logo.png" width="138" height="70" alt="Sedona"></a>
         </div>
@@ -29,7 +29,7 @@
         </nav>
       </header>
       <section class="filters">
-        <form action="#" method="post" class="filter-form">
+        <form action="#" method="post" class="filter-form clearfix">
           <div class="filter-block">
             <b class="filter-type">Инфраструктура:</b><br>
             <div>
@@ -44,6 +44,8 @@
               <input type="checkbox" name="wifi" id="wifi">
               <label for="wifi">Wi-Fi</label>
             </div>
+          </div>
+          <div class="filter-block">
             <b class="filter-type">Тип жилья:</b><br>
             <div>
               <input type="checkbox" name="hotel" id="hotel" checked>
@@ -58,16 +60,20 @@
               <label for="apartment">Апартаменты</label>
             </div>
           </div>
+          <div class="price-per-day">
             <b class="filter-type">Стоимость в сутки (Р):</b><br>
             <input type="text" name="from-price" value="от 0">
             <input type="text" name="to-price" value="до 3000"><br>
             <button type="submit" name="search">Показать</button>
+          </div>
         </form>
       </section>
-      <div class="result-area">
-        <div class="result-sorting">
+      <div class="result-area clearfix">
+        <div class="found">
           <span>Найдено:</span>
           <span>3</span>
+        </div>
+        <div class="sorting-list">
           <ul>
             <li class="sorting-title">Сортировка:</li>
             <li>
@@ -80,77 +86,83 @@
               <a href="#">По рейтингу</a>
             </li>
           </ul>
-          <div class="sorting">
-            <a class="active">По возрастанию</a>
-            <a href="#">По убыванию</a>
-          </div>
+        </div>
+        <div class="sorting">
+          <a class="active">По возрастанию</a>
+          <a href="#">По убыванию</a>
         </div>
       </div>
-        <section class="result-item clearfix">
-          <div class="item-image">
+        <section class="hotel clearfix">
+          <div class="hotel-image">
             <img src="img/amara.jpg" width="135" height="90" alt="Результат-1">
           </div>
-          <div class="result-description">
+          <div class="hotel-description">
             <a href="#">Amara Resort & Spa</a>
             <div class="type-price">
               <span>Гостиница</span>
               <span>от 4000 Р.</span>
             </div>
+            <div class="info-and-booking">
+              <a href="#" class="btn btn-blue">Подробнее</a>
+              <a href="#" class="btn btn-brown">Забронировать</a>
+            </div>
           </div>
-          <div class="info-and-booking">
-            <a href="#" class="btn btn-blue">Подробнее</a>
-            <a href="#" class="btn btn-brown">Забронировать</a>
+          <div class="hotel-rating">
+            <div class="stars">
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+            </div>
+            <p class="rating">Рейтинг: 8,5</p>
           </div>
-          <div class="stars">
-            <span class="star"></span>
-            <span class="star"></span>
-            <span class="star"></span>
-            <span class="star"></span>
-          </div>
-          <p class="rating">Рейтинг: 8,5</p>
         </section>
-        <section class="result-item clearfix">
-          <div class="item-image">
+        <section class="hotel clearfix">
+          <div class="hotel-image">
             <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Результат-2">
           </div>
-          <div class="result-description">
+          <div class="hotel-description">
             <a href="#">Desert Quail Inn</a>
             <div class="type-price">
               <span>Мотель</span>
               <span>от 3000 Р.</span>
             </div>
+            <div class="info-and-booking">
+              <a href="#" class="btn btn-blue">Подробнее</a>
+              <a href="#" class="btn btn-brown">Забронировать</a>
+            </div>
           </div>
-          <div class="info-and-booking">
-            <a href="#" class="btn btn-blue">Подробнее</a>
-            <a href="#" class="btn btn-brown">Забронировать</a>
+          <div class="hotel-rating">
+            <div class="stars">
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+            </div>
+            <p class="rating">Рейтинг: 8,9</p>
           </div>
-          <div class="stars">
-            <span class="star"></span>
-            <span class="star"></span>
-            <span class="star"></span>
-          </div>
-          <p class="rating">Рейтинг: 8,9</p>
         </section>
-        <section class="result-item clearfix">
-          <div class="item-image">
+        <section class="hotel clearfix">
+          <div class="hotel-image">
             <img src="img/poco-diablo.jpg" width="135" height="90" alt="Результат-2">
           </div>
-          <div class="result-description">
+          <div class="hotel-description">
             <a href="#">Villas at Poco Diablo</a>
             <div class="type-price">
               <span>Апартаменты</span>
               <span>от 2000 Р.</span>
             </div>
+            <div class="info-and-booking">
+              <a href="#" class="btn btn-blue">Подробнее</a>
+              <a href="#" class="btn btn-brown">Забронировать</a>
+            </div>
           </div>
-          <div class="info-and-booking">
-            <a href="#" class="btn btn-blue">Подробнее</a>
-            <a href="#" class="btn btn-brown">Забронировать</a>
+          <div class="hotel-rating">
+            <div class="stars">
+              <span class="star"></span>
+              <span class="star"></span>
+            </div>
+            <p class="rating">Рейтинг: 9,2</p>
           </div>
-          <div class="stars">
-            <span class="star"></span>
-            <span class="star"></span>
-          </div>
-          <p class="rating">Рейтинг: 9,2</p>
         </section>
       <footer class="main-footer clearfix">
         <div class="hashtag">

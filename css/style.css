@@ -11,16 +11,15 @@ body {
   text-transform: uppercase;
   margin: 0;
   background-color: #f2f2f2;
-  }
+}
 
 .advantages-title {
   font-size: 21px;
   line-height: 26px;
   color: rgb(0, 0, 0);
-  font-weight: normal;
+  font-weight: bold;
   font-family: "PT Sans", Arial, sans-serif;
-
-  }
+}
 
 .advantages p {
   line-height: 26px;
@@ -32,8 +31,7 @@ body {
   color: #000000;
   font-weight: bold;
   font-family: "PT Sans", Arial, sans-serif;
-
-  }
+}
 
 .hotel-search-title {
   font-size: 30px;
@@ -41,12 +39,13 @@ body {
   color: rgb(0, 0, 0);
   font-weight: bold;
   font-family: "PT Sans", Arial, sans-serif;
-  }
+}
 
 .wrapper {
     width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
+    box-shadow: 0 0 3px;
 }
 
 .header {
@@ -62,7 +61,6 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
-
 }
 
 .main-navigation ul {
@@ -70,7 +68,6 @@ body {
   margin: 0;
   list-style: none;
   font-size: 0;
-
 }
 
 .main-navigation li {
@@ -81,8 +78,6 @@ body {
   font-size: 14px;
   line-height: 26px;
   padding: 15px 15px;
-
-
 }
 
 .main-navigation li:nth-child(2) {
@@ -94,13 +89,13 @@ body {
   font-weight: bold;
   text-decoration: none;
 }
+
 .main-navigation a:hover {
   color: #81b3d2;
 }
 
 a.active {
   color: #766357;
-
 }
 
 .main-navigation a:active {
@@ -146,18 +141,18 @@ a.active {
 .advantage {
   float: left;
   width: 33.333333%;
-
 }
 
+
 .advantage-description {
+  display: block;
   padding: 0 50px;
 }
 
 .advantage-blue {
   background-color: #81b3d2;
-  padding-top: 50px;
-  padding-bottom: 13px;
-
+  padding-top: 34px;
+  padding-bottom: 8px;
 }
 
 
@@ -171,6 +166,8 @@ a.active {
 
 .advantage-blue .advantage-title {
   color: #ffffff;
+  padding-left: 113px;
+  padding-right: 114px;
 }
 
 .advantage-item {
@@ -195,6 +192,10 @@ a.active {
   padding: 0;
 }
 
+.advantage-image img {
+  display: block;
+}
+
 .advantage-icon {
   padding-top: 106px;
   position: relative;
@@ -202,6 +203,8 @@ a.active {
 
 .advantage-icon::after {
   position: absolute;
+  content: "";
+  top: 25px;
   width: 76px;
   height: 75px;
   bottom: 30px;
@@ -212,16 +215,19 @@ a.active {
 .advantage-icon-home::after {
   background-image: url("../img/house.png");
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .advantage-icon-burger::after {
   background-image: url("../img/burger.png");
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .advantage-icon-gift::after {
   background-image: url("../img/souvenir.png");
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .hotel-search {
@@ -256,16 +262,7 @@ a.active {
   padding-right: 55px;
 }
 
-.search-form {
-  position: relative;
-  min-height: 397px;
-}
-
 .submit-form {
-  position: absolute;
-  bottom: 58px;
-  left: 50%;
-  transform: translateX(-50%);
   display: block;
   color: #ffffff;
   width: 460px;
@@ -293,6 +290,33 @@ a.active {
   color: #000000;
   line-height: 26px;
   font-weight: bold;
+  padding: 55px 55px;
+}
+
+.search-form-row label {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  margin-right: 30px;
+}
+
+.search-form-row {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 30px;
+}
+
+.search-form-input {
+  display: inline-block;
+  vertical-align: middle;
+  width: 320px;
+  position: relative;
+}
+
+.search-form .input {
+  width: 100%;
+  height: 30px;
+  padding-right: 50px;
 }
 
 .search-form input {
@@ -302,11 +326,61 @@ a.active {
   color: inherit;
   text-transform: uppercase;
   font-family: "PT Sans", Arial, sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.calendar {
+  position: absolute;
+  width: 23px;
+  height: 24px;
+  background: none;
+  border: none;
+  outline: none;
+  right: 5px;
+  top: 3px;
+}
+
+.search-form-col {
+  float: left;
+  width: 50%;
+}
+
+.search-form-inp-quantity {
+
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+}
+
+.quantity-plus {
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+}
+
+.quantity-minus {
+  width: 12px;
+  height: 3px;
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+}
+
+.search-form .input-quantity {
+  width: 30px;
+  height: 35px;
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
 }
 
 .main-footer {
   padding: 38px 73px;
-  background-color: #f9fbf6;
+  background-color: #ffffff;
 }
 
 .main-footer-index {
@@ -316,6 +390,7 @@ a.active {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
 }
+
 .hashtag {
   float: left;
   padding-right: 163px;
@@ -328,9 +403,7 @@ a.active {
 
 .social-btns {
   float: left;
-
   padding-left: 116px;
-
 }
 
 .social-btns a:hover {
@@ -341,7 +414,7 @@ a.active {
   display: inline-block;
   width: 48px;
   height: 48px;
-  margin: 0 8px;
+  margin: 0 7px;
   font-size: 0;
   vertical-align: top;
 }
@@ -365,7 +438,6 @@ a.active {
 }
 
 .developer-link {
-
   text-decoration: none;
   font-size: 0;
   background-image: url("../img/footer-logo.png");
@@ -381,37 +453,140 @@ a.active {
 .filters {
   background: #e4f1f9 url("../img/filter-background.jpg") no-repeat;
   color: #ffffff;
-  padding-right: 73px;
-  padding-left: 73px;
+  padding: 30px 73px;
 }
 
-.filter-form {
+.filter-type {
+  display: block;
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
 }
 
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  font-size: 0;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 150px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
 .filter-block {
   float: left;
   padding-right: 79px;
 }
 
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
 .price-per-day {
   float: right;
-}
-
-.price-per-day input {
+  width: 330px;
   color: #ffffff;
-  font-family: "PT Sans", Arial, sans-serif;
-}
-
-.price-per-day button {
-  color: #ffffff;
-  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 .result-area {
   padding-right: 73px;
   padding-left: 73px;
   padding-top: 30px;
-  padding-bottom: 35px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .found {
@@ -425,6 +600,7 @@ a.active {
   float: left;
   font-size: 12px;
   padding-right: 34px;
+  vertical-align: bottom;
 }
 
 .sorting-list ul {
@@ -437,7 +613,7 @@ a.active {
 
 .sorting-list li {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: bottom;
   text-align: left;
   font-size: 12px;
   line-height: 18px;
@@ -447,18 +623,17 @@ a.active {
 
 .sorting-list a {
   color: #d1d1d1;
-
+  text-decoration: none;
 }
 
 .sorting-list a.active {
   color: #8bb9d5;
   text-decoration: none;
-
 }
 
 .sorting-list a:hover {
   color: #81b3d2;
-
+  text-decoration: none;
 }
 
 .sorting-list a:active {
@@ -488,19 +663,20 @@ a.active {
 }
 
 .hotel {
-  padding-right: 73px;
-  padding-left: 73px;
+  padding: 30px 73px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel-image {
   width: 135px;
   float: left;
-  padding-right: 28px;
+  margin-right: 28px;
 }
 
 .hotel-description {
   width: 264px;
   float: left;
+  margin-bottom: 0;
 }
 
 .hotel-description > a {
@@ -525,6 +701,22 @@ a.active {
   text-decoration: none;
 }
 
+.hotel-name {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.type-price {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.apart-type {
+  display: inline-block;
+  width: 109px;
+  margin-right: 8px;
+}
+
 .btn {
   display: inline-block;
   vertical-align: middle;
@@ -532,19 +724,21 @@ a.active {
 }
 
 .btn-blue {
+  float: left;
   width: 109px;
   height: 27px;
   font-size: 14px;
   background-color: #81b3d2;
-  padding: 2px 15px;
+  padding: 2px 10px;
 }
 
 .btn-brown {
+  float: left;
   width: 142px;
   height: 27px;
   font-size: 14px;
   background-color: #766357;
-  padding: 2px 15px;
+  padding: 2px 10px;
   margin-left: 8px;
 }
 
@@ -565,11 +759,15 @@ a.active {
 }
 
 .stars {
-  display: inline-block;
-  width: 17px;
+  width: 100%;
   height: 17px;
+  margin-bottom: 48px;
 }
 
 .star {
+  float: right;
+  width: 20px;
+  height: 20px;
   background-image: url("../img/star.png");
+  background-repeat: no-repeat;
 }

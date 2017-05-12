@@ -72,7 +72,7 @@
             <div class="advantage-item">
               <h2 class="advantage-title">Небольшая площадь</h2>
               <div class="advantage-number">№3</div>
-              <p class="advantage-description">Все достопримечатльности находятся очень близко</p>
+              <p class="advantage-description">Все достопримечательности находятся очень близко</p>
            </div>
            <div class="advantage-item">
              <h2 class="advantage-title">Красивая дорога</h2>
@@ -94,21 +94,39 @@
 
       <div class="map">
           <form action="#" method="post" class="search-form">
-            <div>
+            <div class="search-form-row">
               <label for="arrival-date">Дата заезда:</label>
-              <input type="text" name="arrival-date" id="arrival-date" value="24 Апреля 2017"><br>
+              <div class="search-form-input">
+                <input type="text" name="arrival-date" class="input" id="arrival-date" value="24 Апреля 2017">
+                <button type="button" name="button" class="calendar"></button>
+              </div>
             </div>
-            <div>
+            <div class="search-form-row">
               <label for="departure-date">Дата выезда:</label>
-              <input type="text" name="departure-date" id="departure-date" value="4 Июля 2017"><br>
+              <div class="search-form-input">
+                <input type="text" name="departure-date" class="input" id="departure-date" value="4 Июля 2017">
+                <button type="button" name="button" class="calendar"></button>
+              </div>
             </div>
-            <div>
-              <label for="adults">Взрослые:</label>
-              <input type="text" name="adults" id="adults" value="2">
+            <div class="search-form-row clearfix">
+              <div class="search-form-col">
+                <label for="adults">Взрослые:</label>
+                <div class="search-form-inp-quantity">
+                  <button type="button" name="button" class="quantity quantity-plus"></button>
+                  <input type="text" name="adults" class="input-quantity" id="adults" value="2">
+                  <button type="button" name="button" class="quantity quantity-minus"></button>
+                </div>
+              </div>
             </div>
-            <div>
-              <label for="children">Дети:</label>
-              <input type="text" name="children" id="children" value="0"><br>
+            <div class="search-form-row clearfix">
+              <div class="search-form-col">
+                <label for="children">Дети:</label>
+                <div class="search-form-inp-quantity">
+                  <button type="button" name="button" class="quantity quantity-plus"></button>
+                  <input type="text" name="children" class="input-quantity" id="children" value="0">
+                  <button type="button" name="button" class="quantity quantity-minus"></button>
+                </div>
+              </div>
             </div>
             <button type="submit" name="search" class="submit-form">Найти</button>
           </form>
